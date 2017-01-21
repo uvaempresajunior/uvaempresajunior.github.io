@@ -199,7 +199,7 @@ section header h2 {
 .header-frame-fixed {
     padding: 0;
     position: fixed;
-    background-color: #3498db;
+    background-color: #000;/*#3498db;*/
 }
 
 .site-logo h1 a {
@@ -292,11 +292,11 @@ section header h2 {
 	font-size: 16px;
 }
 
-.sponsors h2, .sponsors h3 {
+.services h2, .services h3 {
     text-transform: uppercase;
 }
 
-.sponsors h3 {
+.services h3 {
     color: #999999;
     font-family: "sinkin_sans600_semibold";
     font-size: 20px;
