@@ -304,3 +304,23 @@ section header h2 {
     padding: 0 0 11px;
     min-height: 60px;
 }
+
+#venue {
+	position: relative;
+	background-color: #000;
+}
+
+.venu-address {
+	min-height: 300px;
+	background: rgba(52, 152, 219, 0.85) none repeat scroll 0 0	
+}
+
+.venu-address .address {
+	padding-left: 30px;
+	position: relative;
+}
+
+.venu-address .address .fa{
+	position: absolute;
+	left: 0;
+}
