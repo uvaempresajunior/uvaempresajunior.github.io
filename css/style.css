@@ -185,21 +185,21 @@ section header h2 {
 /*header*/
 .header-frame  {
     background-color: #3498db;
+    position: fixed;
+    background-color: #FFFFFF;
 }
 
 .header-frame-absolute {
-    padding: 30px 0;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 1000;
-    background-color: transparent;
+    /*background-color: #FFFFFF; cor antes da transição*/
     transition: padding 1s, background-color 1s;
 }
 
 .header-frame-fixed {
-    padding: 0;
-    position: fixed;
-    background-color: #000;/*#3498db;*/
+    /*position: fixed;
+    background-color: #FFFFFF;#3498db;*/  /*cor após transição*/
 }
 
 .site-logo h1 a {
@@ -216,12 +216,12 @@ section header h2 {
 @media all and (min-width:900px) {
 
     .nav-inline li a {
-        color: #ffffff;
+        color: #202020;
     }
     .header-inline .nav-inline li {
         margin: 0 0 0 3.5em;
     }
-    .header-frame-absolute .nav-inline li a:hover { color: #3498DB;}
+    .header-frame-absolute .nav-inline li a:hover { color: #fcd307;}
     .header-frame-fixed .nav-inline li a:hover { color: #333333;}
 
 }
@@ -323,4 +323,27 @@ section header h2 {
 .venu-address .address .fa{
 	position: absolute;
 	left: 0;
+}
+
+#menu_header{
+    padding: 0;
+    font-family: "serif";
+    font-size: 10px;
+    color: #ffff90;
+}
+
+a{
+    text-decoration: underline;
+}
+
+a:link{
+    color:#FFFFFF;
+}
+
+a:visited{
+    color: #202020;
+}
+
+a:hover{
+    color: #fcd307;
 }
