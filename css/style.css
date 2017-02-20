@@ -184,6 +184,8 @@ section header h2 {
 
 /*header*/
 .header-frame  {
+	padding:0;
+	margin:0;
     background-color: #3498db;
     position: fixed;
     background-color: #FFFFFF;
