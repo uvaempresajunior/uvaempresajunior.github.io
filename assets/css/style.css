@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'sinkin_sans200_x_light';
+    src: url('../fonts/SinkinSans-200XLight-webfont.eot');
+    src: url('../fonts/SinkinSans-200XLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-200XLight-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-200XLight-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-200XLight-webfont.svg#sinkin_sans200_x_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans300_light';
+    src: url('../fonts/SinkinSans-300Light-webfont.eot');
+    src: url('../fonts/SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-300Light-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('../fonts/SinkinSans-400Regular-webfont.eot');
+    src: url('../fonts/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans600_semibold';
+    src: url('../fonts/SinkinSans-600SemiBold-webfont.eot');
+    src: url('../fonts/SinkinSans-600SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.svg#sinkin_sans600_semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans700_bold';
+    src: url('../fonts/SinkinSans-700Bold-webfont.eot');
+    src: url('../fonts/SinkinSans-700Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-700Bold-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-700Bold-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+azul fundo site: #3498db;
+azul botão site: #5bc0de;
+azul veiga #0d4e7d;
+amarelo veiga: #fed018;
+*/
+
+/*CSS RESET*/
+div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body, * {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  list-style:none;
+}
+
+/*End - Reset*/
+
+.center-content{
+    max-width: 1000px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#tudo #topo{
+    background: white;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+#tudo #logo{
+    display: block;
+    float: left;
+}
+#tudo #menu{
+    float: right;
+}
+#tudo #menu ul{
+    padding-top: 17px;
+}
+#tudo #menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#tudo #menu li a{
+    color: black;
+    font-size: 15px;
+    font-family: Tahoma;
+    text-decoration: none;
+}
+#tudo #menu li:first-child a{
+    color: #3498db;
+}
+
+#tudo #quemsomos{
+    height: 605px;
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url("../images/abre2.jpg") center center no-repeat;
+    background-size: auto, cover;
+}
+
+#tudo #quemsomos .center-content{
+    height: 100%;
+}
+#tudo #quemsomos .chamada{
+    display: flex;
+    max-width: 540px;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+}
+#tudo #quemsomos .chamada h1{
+    font-family: "sinkin_sans600_semibold";
+    font-size: 55px;
+    color: white;
+}
+#tudo #quemsomos .chamada p{
+    font-family: "sinkin_sans300_light";
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    margin: 25px 0;
+}
+#tudo #quemsomos .chamada a{
+    display: block;
+    text-align: center;
+    width: 250px;
+    border: 2px solid white;
+    color: white;
+    font-family: "sinkin_sans300_light";
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: 'sinkin_sans300_light', serif;
+}
+
+/* Titulagem */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'sinkin_sans600_semibold', serif;
+}
