@@ -2,7 +2,7 @@
 /* Etiquetas HTML obs: Não é necessário aplicar o CSS RESET com este código na página.  */
 html { font-size: 62.5%; background-color: #ffffff; }
 
-body { color: #111100; font-size: 1em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
+body { color: #111100; font-size: 0em; line-height: 1.5em; font-family: sans-serif; margin: 0; padding: 0; }
 
 /* Titulagem */
 h1 { font-size: 4.0em; line-height: 60px; min-height: 90px; padding: 13px 0 17px; }
@@ -300,8 +300,8 @@ header, menu, nav, article, section, aside, details, figcaption, figure, footer 
 
 /* Altura mínima do elemento HTML.  Uso: Tem momentos que você precisa de uma altura mínima no elemento HTML. Esta classe especifica a altura mínima com valor múltiplo da entrelinha, sem limitar o conteúdo, caso cresça em tamanho e quantidade de elementos. Ex: Um uso comum: <div class="row min-h-7">  */
 .min-h-1, .form-row.min-h-1 { min-height: 30px; }
-
-.min-h-2, .form-row.min-h-2 { min-height: 60px; }
+/* controla a largura da faixa branca do menu*/
+.min-h-2, .form-row.min-h-2 { min-height: 40px; }
 
 .min-h-3, .form-row.min-h-3 { min-height: 90px; }
 
