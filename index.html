@@ -6,19 +6,10 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-		<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
-		<!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
-        <!-- <link rel="stylesheet" href="assets/css/basalstyle/style.min.css"> -->
+
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 		
-		<!--<script src="assets/js/bootstrap.min.js"></script>
-		
-		<script src="assets/js/jquery-1.11.0.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/js/smooth-scroll.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
-		<script src="assets/js/main.js"></script>-->
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
 	</head>
 	
 	<body>
@@ -31,10 +22,10 @@
 					<nav id="menu">
 						<ul>
 							<li><a title="Início" href="#topo">Início</a></li>
-							<li><a title="Quem Somos" href="#quemsomos">Quem Somos</a></li>
-							<li><a title="Serviços" href="#servicos">Serviços</a></li>
+							<li><a title="Quem Somos" href="#quemsomos" class="scrollSuave">Quem Somos</a></li>
+							<li><a title="Serviços" href="#servicos" class="scrollSuave">Serviços</a></li>
 							<!-- <li><a title="Portifólio" href="#portfolio">Portifólio</a></li> -->
-							<li><a title="Contato" href="#contato">Contato</a></li>
+							<li><a title="Contato" href="#contato" class="scrollSuave">Contato</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -206,6 +197,14 @@
 					</div>
 				</div>
 			</div> -->
-		
+		<script>
+			var $doc = $('html, body');
+			$('.scrollSuave').click(function() {
+				$doc.animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+			});
+		</script>
 	</body>
 </html>
