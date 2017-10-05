@@ -29,8 +29,12 @@ $mail->Password = "";
 
 $mail->SetFrom($email, $name); //Seu e-mail
 $mail->Subject = $subject;//Assunto do e-mail
+$mail->AddAddress("", ""); // config default sendo cliente // e-mail que vai receber
 
-$mail->AddAddress("", ""); // email que vai receber
+//if($tipo == "voluntario") {
+//	$mail->AddAddress("", ""); // e-mail que vai receber
+//}
+
 $mail->MsgHTML($mensagem);
 if(!$mail->Send()) {
 	$fp = fopen("log_erro.txt","w");
