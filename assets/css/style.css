@@ -247,6 +247,8 @@ html, body, * {
 }
 #tudo #quemsomos #lista-diretoria{
     margin-top: 30px;
+    position: relative;
+    margin-left: 15%;
 }
 #tudo #quemsomos #lista-diretoria li{
     max-width: 220px;
