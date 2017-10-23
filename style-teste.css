@@ -231,8 +231,16 @@ html, body, * {
 
 /*-- QUEM SOMOS --*/
 #tudo #quemsomos{
-    background: #fed018;
-    padding: 50px 0;
+    /*background: #fed018;*/
+	background: -moz-linear-gradient(45deg, rgba(6,8,58,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(6,8,58,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(45deg, rgba(6,8,58,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(45deg, rgba(6,8,58,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(45deg, rgba(6,8,58,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+	background: linear-gradient(45deg, rgba(6,8,58,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#06083a',GradientType=1 ); /* ie6-9 */
+    
+	padding: 50px 0;
 }
 #tudo #quemsomos .box-conteudo{
     margin-top: 30px;
@@ -240,6 +248,7 @@ html, body, * {
     overflow: auto;
     padding: 5px 0;
 }
+
 #tudo #quemsomos #case-img{
     max-width: 40%;
     display: inline-block;
@@ -254,6 +263,7 @@ html, body, * {
     line-height: 25px;
     font-family: tahoma;
     font-size: 16px;
+	color: white;
 }
 #tudo #quemsomos #lista-diretoria{
     margin-top: 30px;
@@ -276,10 +286,11 @@ html, body, * {
 #tudo #quemsomos #lista-diretoria li .case-img-circulo img{
     width: 100%;
 }
-#tudo #quemsomos #lista-diretoria li p{
+#tudo #quemsomos #lista-diretoria li p {
     line-height: 25px;
     font-family: tahoma;
     font-size: 16px;
+color: white;	
 }
 
 /*-- SERVIÇOS --*/
