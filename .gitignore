@@ -1,4 +1,1 @@
-/*psta usada para centralizar as ferramentas, entretanto na hora de usar o projeto
-tem as pastas img (imagem), js (scripts javascript) e css (estilos)*/
-lib
-.idea/
+node_modules
